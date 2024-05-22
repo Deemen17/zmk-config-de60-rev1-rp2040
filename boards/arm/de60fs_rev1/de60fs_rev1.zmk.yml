@@ -1,0 +1,10 @@
+file_format: "1"
+id: de60fs_rev1
+name: Deemen17 De60fs Rev1
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+url: 

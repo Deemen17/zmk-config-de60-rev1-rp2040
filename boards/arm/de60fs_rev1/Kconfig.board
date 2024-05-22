@@ -1,0 +1,6 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_DE60FS_REV1
+    bool "Deemen17 De60fs Rev.1"
+    depends on SOC_RP2040

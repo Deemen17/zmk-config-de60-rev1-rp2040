@@ -18,4 +18,4 @@
 #
 ---
 include:
-  - board: kbdfans_tofu65_v2
+  - board: de60fs_rev1

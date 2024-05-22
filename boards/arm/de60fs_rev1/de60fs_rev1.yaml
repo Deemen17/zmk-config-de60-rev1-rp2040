@@ -1,0 +1,15 @@
+identifier: de60fs_rev1
+name: Deemen17 De60fs Rev1
+type: mcu
+arch: arm
+flash: 16384
+ram: 264
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - usb_device
+  - hwinfo
+  - pwm
