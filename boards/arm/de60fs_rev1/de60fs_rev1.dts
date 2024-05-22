@@ -21,12 +21,8 @@
         zephyr,code-partition = &code_partition;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,underglow = &led_strip;
+        zmk,underglow = &ws2812;
     };
-
-    aliases {
-		led_strip = &ws2812;
-	};
 
     xtal_clk: xtal-clk {
         compatible = "fixed-clock";
@@ -136,7 +132,7 @@ RC(4,0) RC(4,1) RC(4,2)                         RC(4,6)                         
 
 		ws2812: ws2812 {
 			status = "okay";
-			output-pin = <11>;
+			gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
 			chain-length = <22>;
 			color-mapping = <LED_COLOR_ID_GREEN
 					 LED_COLOR_ID_RED
@@ -145,4 +141,6 @@ RC(4,0) RC(4,1) RC(4,2)                         RC(4,6)                         
 			frequency = <800000>;
 		};
 	};
+
+    
 };
