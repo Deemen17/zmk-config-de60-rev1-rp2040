@@ -21,7 +21,7 @@
         zephyr,code-partition = &code_partition;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,underglow = &led_strip;
+        zmk,underglow = &ws2812;
     };
 
     xtal_clk: xtal-clk {
@@ -130,7 +130,7 @@ RC(4,0) RC(4,1) RC(4,2)                         RC(4,6)                         
 		pinctrl-names = "default";
 		bit-waveform = <3>, <3>, <4>;
 
-		led_strip: ws2812@0 {
+		ws2812: ws2812 {
 			status = "okay";
 			output-pin = <11>;
 			chain-length = <22>;
